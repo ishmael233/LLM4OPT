@@ -1,47 +1,72 @@
 # LLM4OPT: from Modeling to Solving
 
-## LLMs for Optimization
+## 🎯 LLMs for Optimization
 
 Optimization techniques have become a core tool for solving complex problems across diverse fields such as engineering design, economic planning, and scientific discovery. When tackling real-world challenges, researchers typically abstract them into mathematical optimization models, which are then solved using various optimization algorithms. In recent years, large language models (LLMs) have emerged as a powerful paradigm, offering novel perspectives and capabilities for the field of optimization. The application of LLMs in optimization spans two primary areas: **modeling** and **solving**.
 
 We provide a **classification** and **collection** of these applications to serve as a reference for researchers. We propose a new taxonomy to clearly articulate the deep relationship between LLMs and the optimization process. Specifically, we classify the research in this field into two main categories: LLMs for optimization modeling and LLMs for optimization solving. The latter, LLMs for optimization solving, is further subdivided into three classes: LLMs as optimizers, low-level LLMs assisted optimization algorithms, and high-level LLMs assisted optimization algorithms. The specific definitions for these are as follows:
 
 
-1. **LLMs for Optimization Modeling** aims to automatically transform unstructured natural language descriptions of problems into mathematical optimization models that can be understood and solved by machines. This research area is the foundational step toward achieving a fully LLM-driven optimization workflow, with the core challenge lying in bridging the gap between ambiguous natural language and precise mathematical models. Two main paradigms exist in this field: prompt-based and learning-based methods. The former typically relies on carefully designed prompting procedures or the collaboration of multiple agents, with the advantage of being quickly deployable without additional training. The latter, however, often requires data synthesis and model fine-tuning. While these methods incur training costs, they can significantly enhance modeling reliability in complex scenarios.
+1. 💻 **LLMs for Optimization Modeling** aims to automatically transform unstructured natural language descriptions of problems into mathematical optimization models that can be understood and solved by machines. This research area is the foundational step toward achieving a fully LLM-driven optimization workflow, with the core challenge lying in bridging the gap between ambiguous natural language and precise mathematical models. Two main paradigms exist in this field: prompt-based and learning-based methods. The former typically relies on carefully designed prompting procedures or the collaboration of multiple agents, with the advantage of being quickly deployable without additional training. The latter, however, often requires data synthesis and model fine-tuning. While these methods incur training costs, they can significantly enhance modeling reliability in complex scenarios.
 
-2. **LLMs as Optimizers** refers to the use of LLMs directly as general-purpose optimizers, which solve optimization problems through iterative natural language interaction without relying on traditional optimization algorithm frameworks. This paradigm leverages the powerful in-context learning and complex reasoning capabilities of LLMs to analyze optimization trajectories and continuously generate more promising candidate solutions. Although this direct optimization approach faces challenges such as model dependency, it stands as the earliest bridge connecting large models to optimization tasks, possessing significant pioneering importance and potential.
+2. 🤖 **LLMs as Optimizers** refers to the use of LLMs directly as general-purpose optimizers, which solve optimization problems through iterative natural language interaction without relying on traditional optimization algorithm frameworks. This paradigm leverages the powerful in-context learning and complex reasoning capabilities of LLMs to analyze optimization trajectories and continuously generate more promising candidate solutions. Although this direct optimization approach faces challenges such as model dependency, it stands as the earliest bridge connecting large models to optimization tasks, possessing significant pioneering importance and potential.
 
-3. **Low-level LLMs for Optimization Algorithms** refers to the paradigm of embedding LLMs as intelligent components within traditional optimization algorithms to enhance their specific operations. Unlike acting as a standalone optimizer, this approach tightly integrates LLMs with traditional evolutionary algorithms, leveraging the models' powerful data analysis capabilities and rich domain knowledge to boost algorithmic performance. Specifically, LLMs can be applied to core processes such as algorithm initialization, evolutionary operators, algorithm configuration, and fitness evaluation. This method relies on an efficient optimization framework to empower traditional components, enabling them to adapt more intelligently to different problem characteristics and search states, thereby improving the algorithm's efficiency and solution quality at a fundamental level.
+3. 🔧 **Low-level LLMs for Optimization Algorithms** refers to the paradigm of embedding LLMs as intelligent components within traditional optimization algorithms to enhance their specific operations. Unlike acting as a standalone optimizer, this approach tightly integrates LLMs with traditional evolutionary algorithms, leveraging the models' powerful data analysis capabilities and rich domain knowledge to boost algorithmic performance. Specifically, LLMs can be applied to core processes such as algorithm initialization, evolutionary operators, algorithm configuration, and fitness evaluation. This method relies on an efficient optimization framework to empower traditional components, enabling them to adapt more intelligently to different problem characteristics and search states, thereby improving the algorithm's efficiency and solution quality at a fundamental level.
 
-4. **High-level LLMs for Optimization Algorithms** differs from the low-level assistance paradigm by focusing on the top-level orchestration or design of algorithms, rather than their internal components. Specifically, high-level assistance involves two types of tasks: algorithm selection and algorithm generation. The algorithm selection task aims to match the most suitable algorithm from a pool for different problem instances, whereas algorithm generation goes a step further, requiring LLMs to autonomously design new algorithms to better fit a given problem. This class of methods grants LLMs a global perspective over the entire optimization task, transforming their role from an internal assistant to a top-level designer for the entire optimization workflow.
+4. 🎨 **High-level LLMs for Optimization Algorithms** differs from the low-level assistance paradigm by focusing on the top-level orchestration or design of algorithms, rather than their internal components. Specifically, high-level assistance involves two types of tasks: algorithm selection and algorithm generation. The algorithm selection task aims to match the most suitable algorithm from a pool for different problem instances, whereas algorithm generation goes a step further, requiring LLMs to autonomously design new algorithms to better fit a given problem. This class of methods grants LLMs a global perspective over the entire optimization task, transforming their role from an internal assistant to a top-level designer for the entire optimization workflow.
 
-## How to contribute
+## 🤝 How to Contribute
+
+We welcome any suggestions and pull requests! This list is far from comprehensive, and we encourage the community to help us improve it.
+
+### 📋 Ways to Contribute
+
+1. 🛠️ **Fork, Add, and Merge** 
+   - Fork this repository
+   - Add your suggestions or updates
+   - Submit a pull request for review
+
+2. 🐛 **Report Issues** 
+   - Found a problem or have a suggestion?
+   - Open an issue to let us know
+
+3. 📧 **Direct Contact** 
+   - Have questions or want to collaborate?
+   - Contact Yisong Zhang at [23s004040@stu.hit.edu.cn](mailto:23s004040@stu.hit.edu.cn)
+
+### 📜 Sharing Principle
+
+The references listed here are shared for **research purposes only**. If you are an author and do not wish your work to be listed here, please feel free to contact us. We will promptly remove the content upon request.
+
+---
+
+⭐ **We appreciate your contributions to making this resource better for everyone!**
 
 
-## Table of Contents
+## 📑 Table of Contents
 
-- 📚 [Survey Papers](#1-survey-papers)
-- 🤖 [LLMs for Optimization Modeling](#2-LLMs-for-Optimization-Modeling)
-  - [Prompt-based Methods](#21-Prompt-based-Methods)
-  - [Learning-based Methods](#22-Learning-based-Methods)
-- 💻 [LLMs for Optimization Solving](#3-LLMs-for-Optimization-Solving)
-  - [LLMs as Optimizers](#31-LLMs-as-Optimizers)
-  - [Low-level LLMs for Optimization Algorithms](#32-Low-level-LLMs-for-Optimization-Algorithms)
-  - [High-level LLMs for Optimization Algorithms](#33-High-level-LLMs-for-Optimization-Algorithms)
+- 📚 [1. Survey Papers](#1-survey-papers)
+- 💻 [2. LLMs for Optimization Modeling](#2-LLMs-for-Optimization-Modeling)
+  - 🎮 [2.1 Prompt-based Methods](#21-Prompt-based-Methods)
+  - 🧠 [2.2 Learning-based Methods](#22-Learning-based-Methods)
+- ⚙️ [3. LLMs for Optimization Solving](#3-LLMs-for-Optimization-Solving)
+  - 🤖 [3.1 LLMs as Optimizers](#31-LLMs-as-Optimizers)
+  - 🔧 [3.2 Low-level LLMs for Optimization Algorithms](#32-Low-level-LLMs-for-Optimization-Algorithms)
+  - 🎨 [3.3 High-level LLMs for Optimization Algorithms](#33-High-level-LLMs-for-Optimization-Algorithms)
 
 
 ## 1. Survey Papers
 | **Title** | **Publication** | **Year** |
 |-----------|--------------|------|
 | [Evolutionary Computation in the Era of Large Language Model: Survey and Roadmap](https://arxiv.org/abs/2401.10034) | TEVC | 2024 |
-| [When Large Language Model Meets Optimization](https://arxiv.org/abs/2405.10098) | SWEC | 2024 |
+| [When Large Language Model Meets Optimization](https://arxiv.org/abs/2405.10098) | SWEVO | 2024 |
 | [When Large Language Models Meet Evolutionary Algorithms](https://arxiv.org/abs/2401.10510) | Research | 2024 |
 | [Exploring the Improvement of Evolutionary Computation via Large Language Models](https://arxiv.org/abs/2405.02876) | GECCO | 2024 |
-| [A Systematic Survey on Large Language Models for Algorithm Design](https://arxiv.org/abs/2410.14716) | ArXiv | 2024 |
-| [Deep Insights into Automated Optimization with Large Language Models and Evolutionary Algorithms](https://arxiv.org/abs/2410.20848) | ArXiv | 2024 |
+| [A Systematic Survey on Large Language Models for Algorithm Design](https://arxiv.org/abs/2410.14716) | arXiv | 2024 |
+| [Deep Insights into Automated Optimization with Large Language Models and Evolutionary Algorithms](https://arxiv.org/abs/2410.20848) | arXiv | 2024 |
 | [Toward Automated Algorithm Design: A Survey and Practical Guide to Meta-Black-Box-Optimization](https://arxiv.org/abs/2411.00625) | TEVC | 2024 |
-| [Evolutionary Computation and Large Language Models: A Survey of Methods, Synergies, and Applications](https://arxiv.org/abs/2505.15741) | ArXiv | 2025|
-| [A Survey of Optimization Modeling Meets LLMs: Progress and Future Directions](https://arxiv.org/abs/2508.10047) | ArXiv | 2025 |
+| [Evolutionary Computation and Large Language Models: A Survey of Methods, Synergies, and Applications](https://arxiv.org/abs/2505.15741) | arXiv | 2025|
+| [A Survey of Optimization Modeling Meets LLMs: Progress and Future Directions](https://arxiv.org/abs/2508.10047) | arXiv | 2025 |
 
 
 ## 2. LLMs for Optimization Modeling
@@ -55,77 +80,116 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 
 | **Title** | **Publication** | **Year** | **Type** | **Summary** |
 |-----------|--------------|------|------|----------|
-| [x](xx) | CPAIOR | 2023 | Two-stage | Fine-tune models for named entity recognition by incorporating traditional NLP methods.
-| [x](xx) | GECCO | 2023 | Direct | Directly leverage LLMs to generate mathematical models.
-| [x](xx) | arXiv | 2023 |Two-stage | Embed LLMs within the two-stage framework.
-| [x](xx) | arXiv | 2023 | Two-stage | Employ fine-tuned models for constraint classiffcation.
-| [x](xx) | ICLR | 2023 | Multi-agent | Construct dynamic reasoning chains using 11 expert agents.
-| [x](xx) | ICML | 2023 | Multi-agent | Develop a conductor agent to coordinate modeling, programming, and evaluation processes.
-| [x](xx) | INFOR | 2024 | Multi-agent | Develop inter-agent cross-validation to replace solver-dependent veriffcation.
-| [x](xx) | SGC | 2024 | Two-stage | Apply the two-stage framework to energy management systems.
-| [x](xx) | NeurIPS | 2024 | Two-stage | Enhance modeling performance through code-based formalization.
-| [x](xx) | NAACL | 2024 | Two-stage | Develop the MAMO benchmark with ordinary differential equation extensions.
-| [x](xx) | arXiv | 2024 | Two-stage | Predefine abstract structural constraints to regulate the LLM outputs.
-| [x](xx) | arXiv | 2024 | Two-stage | Apply the two-stage framework to travel planning.
-| [x](xx) | arXiv | 2024 | Interactive | Support both single-input and interactive-input modes.
-| [x](xx) | arXiv | 2024 | Multi-agent | Introduce self-corrective prompts and structure-aware modeling based on OptiMUS.
-| [x](xx) | TiiS | 2024 | Interactive | Develop an interactive system for user input processing with ffve selectable task options.
-| [x](xx) | CUI | 2025 | Interactive | Convert user priorities into optimization constraints during dialog interactions.
-| [x](xx) | arXiv | 2025 | Two-stage | Conduct hierarchical Monte Carlo tree search over the hypothesis space.
-| [x](xx) | arXiv | 2025 | Two-stage | Generate variable mapping functions via LLMs with lightweight verification.
-| [x](xx) | RG | 2025 | Multi-agent | Deploy multiple independent reviewers to evaluate modeling results.
-| [x](xx) | arXiv | 2025 | Multi-agent | Replace the conductor agent with structured, predictable workffows.
+| [NER4OPT: Named Entity Recognition for Optimization Modelling from Natural Language](https://link.springer.com/chapter/10.1007/978-3-031-33271-5_20) | CPAIOR | 2023 | Two-stage | Fine-tune models for named entity recognition by incorporating traditional NLP methods. |
+| [Towards an Automatic Optimisation Model Generator Assisted with Generative Pre-trained Transformer](https://arxiv.org/abs/2305.05811) | GECCO | 2023 | Direct | Directly leverage LLMs to generate mathematical models. |
+| [Holy Grail 2.0: From Natural Language to Constraint Models](https://arxiv.org/abs/2308.01589) | arXiv | 2023 |Two-stage | Embed LLMs within the two-stage framework. |
+| [Synthesizing mixed-integer linear programming models from natural language descriptions](https://arxiv.org/abs/2311.15271) | arXiv | 2023 | Two-stage | Employ fine-tuned models for constraint classification. |
+| [Chain-of-experts: When llms meet complex operations research problems](https://openreview.net/pdf?id=HobyL1B9CZ) | ICLR | 2023 | Multi-agent | Construct dynamic reasoning chains using 11 expert agents. |
+| [OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models](https://arxiv.org/abs/2402.10172) | ICML | 2023 | Multi-agent | Develop a conductor agent to coordinate modeling, programming, and evaluation processes. |
+| [Optimization modeling and verification from problem specifications using a multi-agent multi-stage LLM framework](https://www.tandfonline.com/doi/abs/10.1080/03155986.2024.2381306) | INFOR | 2024 | Multi-agent | Develop inter-agent cross-validation to replace solver-dependent verification. |
+| [Democratizing energy management with llm-assisted optimization autoformalism](https://ieeexplore.ieee.org/abstract/document/10738100) | SGC | 2024 | Two-stage | Apply the two-stage framework to energy management systems. |
+| [CAFA: Coding as Auto-Formulation Can Boost Large Language Models in Solving Linear Programming Problem](https://openreview.net/pdf?id=xC2xtBLmri) | NeurIPS | 2024 | Two-stage | Enhance modeling performance through code-based formalization. |
+| [Llms for mathematical modeling: Towards bridging the gap between natural and mathematical languages](https://arxiv.org/abs/2405.13144) | NAACL | 2024 | Two-stage | Develop the MAMO benchmark with ordinary differential equation extensions. |
+| [Abstract Operations Research Modeling Using Natural Language Inputs](https://www.mdpi.com/2078-2489/16/2/128) | arXiv | 2024 | Two-stage | Predefine abstract structural constraints to regulate the LLM outputs. |
+| [TRIP-PAL: Travel Planning with Guarantees by Combining Large Language Models and Automated Planners](https://arxiv.org/abs/2406.10196) | arXiv | 2024 | Two-stage | Apply the two-stage framework to travel planning. |
+| [Solving General Natural-Language-Description Optimization Problems with Large Language Models](https://arxiv.org/abs/2407.07924) | arXiv | 2024 | Interactive | Support both single-input and interactive-input modes. |
+| [OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale](https://arxiv.org/abs/2407.19633) | arXiv | 2024 | Multi-agent | Introduce self-corrective prompts and structure-aware modeling based on OptiMUS. |
+| [“I Want It That Way”: Enabling Interactive Decision Support Using Large Language Models and Constraint Programming](https://dl.acm.org/doi/abs/10.1145/3685053) | TiiS | 2024 | Interactive | Develop an interactive system for user input processing with five selectable task options. |
+| [Values in the Loop: Designing Interactive Optimization with Conversational Feedback](https://dl.acm.org/doi/abs/10.1145/3719160.3735655) | CUI | 2025 | Interactive | Convert user priorities into optimization constraints during dialog interactions. |
+| [Autoformulation of Mathematical Optimization Models Using LLMs](https://arxiv.org/abs/2411.01679) | arXiv | 2025 | Two-stage | Conduct hierarchical Monte Carlo tree search over the hypothesis space. |
+| [EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations](https://arxiv.org/abs/2502.14760) | arXiv | 2025 | Two-stage | Generate variable mapping functions via LLMs with lightweight verification. |
+| [Large Language Model-Based Automatic Formulation for Stochastic Optimization Models](https://arxiv.org/abs/2508.17200) | arXiv | 2025 | Multi-agent | Deploy multiple independent reviewers to evaluate modeling results. |
+| [ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research](https://arxiv.org/abs/2506.01326) | arXiv | 2025 | Multi-agent | Replace the conductor agent with structured, predictable workflows. |
 
+### 2.2 learning-based Methods
 
+| **Title** | **Publication** | **Year** | **Type** | **Summary** |
+|-----------|--------------|------|------|----------|
+| [LM4OPT: Unveiling the Potential of Large Language Models in Formulating Mathematical Optimization Problems](https://arxiv.org/abs/2403.01342) | INFOR | 2024 | Fine-tuning | Progressively fine-tune models on the NL4OPT dataset. |
+| [ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling](https://pubsonline.informs.org/doi/abs/10.1287/opre.2024.1233) | OR | 2024 | Data synthesis | Synthesize data through expansion and augmentation and fine-tune open-source models. |
+| [OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling](https://arxiv.org/abs/2407.09887) | ICLR | 2024 | Data synthesis | Propose inverse data synthesis methodology and construct the OPTIBENCH benchmark. |
+| [LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch](https://arxiv.org/abs/2410.13213) | ICLR | 2024 | Fine-tuning | Introduce model alignment and self-correction mechanisms to mitigate hallucination phenomena. |
+| [BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving](https://arxiv.org/abs/2411.17404) | arXiv | 2024 | Data synthesis | Solve the problem of missing detailed in data synthesis. |
+| [OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling](https://arxiv.org/abs/2502.11102) | arXiv | 2025 | Data synthesis | Develop a scalable bidirectional data synthesis approach. |
+| [Language Models for Business Optimisation with a Real World Case Study in Production Schedulingr](https://arxiv.org/abs/2309.13218) | arXiv | 2025 | Data synthesis | Propose a method for fine-tuning cost-effective LLMs to tackle specific business challenges. |
+| [Solver-Informed RL: Grounding Large Language Models for Authentic Optimization Modeling](https://arxiv.org/abs/2505.11792) | arXiv | 2025 | Fine-tuning | Integrate external optimization solvers as verifiable reward validators for reinforcement learning. |
+| [Step-Opt: Boosting Optimization Modeling in LLMs through Iterative Data Synthesis and Structured Validation](https://arxiv.org/abs/2506.17637) | arXiv | 2025 | Data synthesis | Increase problem complexity through an iterative problem generation approach. |
+| [Auto-Formulating Dynamic Programming Problems with Large Language Models](https://arxiv.org/abs/2507.11737) | arXiv | 2025 | Data synthesis | Combine the diversity of forward generation and the reliability of inverse generation. |
+| [Toward a Trustworthy Optimization Modeling Agent via Verifiable Synthetic Data Generation](https://arxiv.org/abs/2508.03117) | arXiv | 2025 | Data synthesis | Develop a verifiable synthetic data generation pipeline. |
 
-| **Title** | **Publication** | **Year** | **Summary** |
-|-----------|--------------|------|----------|
-| [Large Language Models as Optimizers](https://doi.org/10.48550/arXiv.2309.03409) | ICLR | Sep 2023 | The study introduces "Optimization by PROmpting (OPRO)," a method that utilizes Large Language Models (LLMs) as optimizers. In each optimization step, the LLM generates new solutions based on a prompt containing previously generated solutions and their values. These new solutions are then evaluated and added to the prompt for the next iteration. |
-| [Towards Optimizing with Large Language Models](https://arxiv.org/abs/2310.05204) | KDD | Oct 2023 | This study demonstrates that large language models (LLMs) can effectively perform iterative optimization tasks—including gradient descent, hill climbing, grid search, and black-box optimization—through interactive prompting, achieving strong performance in small-scale problems but exhibiting sensitivity to problem dimensionality and value ranges. |
-| [Large Language Model Agent for Hyper-Parameter Optimization](https://arxiv.org/abs/2402.01881) | ArXiv | Feb 2024 | This paper introduces AgentHPO, an LLM-driven paradigm for automating hyperparameter optimization, reducing trial complexity, and enhancing interpretability compared to traditional AutoML methods. Empirical results across 12 machine learning tasks demonstrate that AgentHPO not only matches but often surpasses human performance while providing explainable optimization strategies. |
-| [Large Language Models As Evolution Strategies](https://dl.acm.org/doi/abs/10.1145/3638530.3654238) | GECCO | Feb 2024 | This work explores the zero-shot capability of large language models (LLMs) in black-box optimization, introducing EvoLLM—a novel evolution strategy leveraging LLMs as in-context recombination operators. Empirical results demonstrate that EvoLLM outperforms baseline algorithms, with performance further enhanced through instruction fine-tuning on teacher optimization trajectories. |
-| [Exploring the True Potential: Evaluating the Black-box Optimization Capability of Large Language Models](https://arxiv.org/abs/2404.06290) | ArXiv | Apr 2024 | This paper systematically evaluates the potential of large language models (LLMs) in black-box optimization, revealing both their limitations in pure numerical tasks and their strengths in broader optimization contexts. The findings highlight LLMs’ ability to leverage heuristics from prompts, paving the way for future applications in diverse optimization scenarios. |
-| [Revisiting OPRO: The Limitations of Small-Scale LLMs as Optimizers](https://arxiv.org/abs/2405.10276) | ACL Finding | May 2024 | This paper demonstrates that small-scale LLMs (e.g., LLaMa-2, Mistral 7B) lack sufficient self-optimization capabilities to effectively leverage OPRO, leading to marginal performance gains compared to traditional CoT prompts, and recommends prioritizing direct, explicit instructions over automated optimization for efficient prompt engineering. |
-| [LLMs can Schedule](https://arxiv.org/abs/2408.06993) | ArXiv | Aug 2024 | This paper introduces the first supervised 120k natural language dataset for training LLMs on job shop scheduling problems (JSSP), demonstrating that fine-tuned LLMs (e.g., Phi-3) achieve comparable performance to neural methods on small-scale JSSP tasks, with a proposed sampling strategy enhancing solution quality. The work bridges LLMs' reasoning capabilities to combinatorial optimization, offering a novel data-driven framework for production scheduling. |
-| [Large Language Model-Based Wireless Network Design](https://doi.org/10.1109/LWC.2024.3462556) | LWC | Sep 2024 | The paper proposes LMCO, an LLM-based combinatorial optimization framework for wireless network planning, which autonomously determines the number and placement of access points by integrating natural language prompts, domain knowledge, and ray-tracing simulations. Experimental results demonstrate that LMCO significantly outperforms traditional methods like ACO in both efficiency and adaptability, especially in complex scenarios, showcasing the transformative potential of LLMs in combinatorial optimization tasks. |
-| [Large Language Models for Combinatorial Optimization of Design Structure Matrix](https://arxiv.org/pdf/2411.12571) | ArXiv | Nov 2024 | This study proposes an LLM-based framework integrating domain knowledge and network topology for combinatorial optimization of Design Structure Matrix (DSM), demonstrating superior convergence speed and solution quality over benchmarks. The results highlight that semantic reasoning with contextual knowledge significantly enhances LLMs' capability in solving real-world engineering CO problems. |
-| [Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs](https://arxiv.org/pdf/2406.16218) | ArXiv | Nov 2024 | The paper proposes ​Trace, a framework for end-to-end optimization of non-differentiable computational workflows using execution traces and LLMs. By reformulating optimization as an OPTO problem and leveraging LLM-based optimizer OptoPrime, Trace efficiently tunes heterogeneous parameters (code, prompts, hyperparameters) with rich feedback, outperforming domain-specific methods in tasks like robot control and prompt engineering. |
-| [Pretrained Optimization Model for Zero-Shot Black Box Optimization](https://proceedings.neurips.cc/paper_files/paper/2024/file/19e9a88d91917775b34fdad447ed8908-Paper-Conference.pdf) | NeurIPS | Dec 2024 | POM (Pretrained Optimization Model) achieves state-of-the-art zero-shot black-box optimization by meta-training on diverse tasks via gradient-based learning, outperforming CMA-ES and L-SHADE in high-dimensional scenarios through adaptive mutation/crossover modules and mask-enhanced exploration. It enables efficient few-shot adaptation with minimal samples, demonstrating robust generalization across dimensions and task distributions.|
-| [An Optimizable Suffix Is Worth A Thousand Templates: Efficient Black-box Jailbreaking without Affirmative Phrases via LLM as Optimizer](https://arxiv.org/pdf/2408.11313) |  NAACL finding | Apr 2025 | The paper introduces ​​ECLIPSE​​, a ​​black-box jailbreaking method​​ that uses ​​LLMs as optimizers​​ to generate adversarial suffixes, bypassing safety alignments without predefined affirmative phrases. It achieves ​​92% attack success rate​​ across models like GPT-3.5, outperforming prior methods in efficiency and naturalness while eliminating white-box access needs.|
-| [Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks](https://arxiv.org/pdf/2410.22296?) |  ArXiv | Apr 2025 | The paper introduces ​​Ehrlich functions​​, a synthetic benchmark for constrained biophysical sequence optimization, and proposes ​​LLOME​​, a bilevel LLM-based optimization method with a novel ​​Margin-Aligned Expectation (MargE)​​ loss, demonstrating that LLMs can outperform specialized solvers (e.g., LaMBO-2) on moderately difficult tasks while remaining competitive on easy/hard variants.|
+## 3. LLMs for Optimization Solving
 
+The advent of large language models has propelled this research into a new phase. This section will delve into three core paradigms for utilizing LLMs in optimization solving: LLMs as optimizers, low-level LLMs for optimization algorithms, and high-level LLMs for optimization algorithms.
 
+### 3.1 LLMs as Optimizers
 
-#### 1.2 Multimodal LLMs as Optimizers
-
+LLMs as optimizers refers to the use of LLMs directly as general-purpose optimizers, which solve optimization problems through iterative natural language interaction without relying on traditional optimization algorithm frameworks. This paradigm leverages the powerful in-context learning and complex reasoning capabilities of LLMs to analyze optimization trajectories and continuously generate more promising candidate solutions.
 
 <div style="text-align: center;">
     <img src="fig/direct.png" width="200" />
 </div>
 
-**Title**                                                                                                                                | **Publication** | **Year**   | **Summary**                                                                                                                                                                                                                   |
-|------------------------------------------------------------------------------------------------------------------------------------------|:----------------:|:----------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [How Multimodal Integration Boost the Performance of LLM for Optimization: Case Study on Capacitated Vehicle Routing Problems](https://doi.org/10.48550/arXiv.2403.01757) |     ArXiv       |  Mar 2024  | This paper presents a multimodal LLM-based optimization framework that combines textual and visual prompts to better capture relationships among decision variables, improving performance on high-dimensional optimization problems like the capacitated vehicle routing problem (CVRP). |
-| [Eyeballing Combinatorial Problems: A Case Study of Using Multimodal Large Language Models to Solve Traveling Salesman Problems](https://arxiv.org/abs/2406.06865) |     ArXiv       |  Jun 2024  | This paper explores the use of Multimodal Large Language Models (MLLMs) to solve the Traveling Salesman Problem (TSP) by leveraging their visual capabilities to analyze images of point distributions on a 2D plane.                         |
-| [Visual Reasoning and Multi-Agent Approach in Multimodal Large Language Models (MLLMs): Solving TSP and mTSP Combinatorial Challenges](https://arxiv.org/abs/2407.00092) |     ArXiv       |  Jun 2024  | This study explores how Multimodal Large Language Models (MLLMs) solve the Traveling Salesman Problem (TSP) and Multiple TSP using images of point distributions. Two multi-agent models were tested: Multi-Agent 1, which refined solutions, and Multi-Agent 2, which focused on rapid decision-making. |
-| [Bridging Visualization and Optimization: Multimodal Large Language Models on Graph-Structured Combinatorial Optimization](https://arxiv.org/abs/2501.11968) |     ArXiv       |  Jan 2025  | This study proposes transforming graph-structured combinatorial problems into images to better capture their structural features, enabling machines to process them in a way similar to human spatial reasoning. By combining multimodal large language models (MLLMs) with simple search techniques, the approach effectively addresses various graph-based tasks, such as influence maximization and network dismantling. |
+
+| **Title** | **Publication** | **Year** | **Type** | **Summary** |
+|-----------|--------------|------|------|----------|
+| [Large Language Models as Optimizers](https://doi.org/10.48550/arXiv.2309.03409) | ICLR | 2023 | Prompt-based | Iteratively refine through optimization trajectories and problem descriptions. |
+| [Towards Optimizing with Large Language Models](https://arxiv.org/abs/2310.05204) | KDD | 2023 | Prompt-based | Design four canonical tasks to evaluate the performance boundaries of LLMs. |
+| [Large Language Models As Evolution Strategies](https://dl.acm.org/doi/abs/10.1145/3638530.3654238) | GECCO | 2024 | Prompt-based | Replace traditional optimization trajectories with candidate solution quality ranking. |
+| [How Multimodal Integration Boost the Performance of LLM for Optimization: Case Study on Capacitated Vehicle Routing Problems](https://doi.org/10.48550/arXiv.2403.01757) | MCII | 2024 | Prompt-based | Utilize MLLMs to jointly process problem descriptions and map visualizations for CVRPs. |
+| [Pretrained Optimization Model for Zero-Shot Black Box Optimization](https://proceedings.neurips.cc/paper_files/paper/2024/file/19e9a88d91917775b34fdad447ed8908-Paper-Conference.pdf) | NeurIPS | 2024 | Learning-based | Pre-train a general-purpose, zero-shot black-box optimization foundation model. |
+| [Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs](https://arxiv.org/pdf/2406.16218) | ArXiv | 2024 | Prompt-based | Replace traditional optimization trajectories with rich, structured execution traces. |
+| [Visual Reasoning and Multi-Agent Approach in Multimodal Large Language Models (MLLMs): Solving TSP and mTSP Combinatorial Challenges](https://arxiv.org/abs/2407.00092) | ArXiv | 2024 | Prompt-based | Utilize MLLMs to process 2D planar point distribution maps as input |
+| [Revisiting OPRO: The Limitations of Small-Scale LLMs as Optimizers](https://arxiv.org/abs/2405.10276) | ACL | 2024 | Prompt-based | Discuss the model dependency of OPRO and identify its limitations on small-scale models. |
+| [Exploring the True Potential: Evaluating the Black-box Optimization Capability of Large Language Models](https://arxiv.org/abs/2404.06290) | ArXiv | 2024 | Prompt-based | Conduct evaluation of LLMs on both discrete and continuous black-box optimization problems. |
+| [LLMs can Schedule](https://arxiv.org/abs/2408.06993) | ArXiv | 2024 | Learning-based | Fine-tune LLMs with instruction-solution pairs for scheduling problems.|
+| [An Optimizable Suffix Is Worth A Thousand Templates: Efficient Black-box Jailbreaking without Affirmative Phrases via LLM as Optimizer](https://arxiv.org/abs/2408.11313) |  NAACL | 2025 | Prompt-based | Apply iterative optimization to jailbreaking attack strategies. |
+| [Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks](https://arxiv.org/abs/2410.22296) |  ArXiv | Apr 2025 | Learning-based | Integrate preference learning to train LLMs for satisfying complex biophysical constraints. |
+| [Large Language Models for Combinatorial Optimization of Design Structure Matrix](https://arxiv.org/abs/2411.12571) | ArXiv | Nov 2024 | Prompt-based | Apply iterative optimization to design structure matrix sequencing. |
+| [Large Language Model-Based Wireless Network Design](https://doi.org/10.1109/LWC.2024.3462556) | WCL | Sep 2024 | Prompt-based | Apply iterative optimization to wireless network design. |
+| [Bridging Visualization and Optimization: Multimodal Large Language Models on Graph-Structured Combinatorial Optimization](https://arxiv.org/abs/2501.11968) |  ArXiv | 2025  | Prompt-based | Process visual representations of abstract graph structures using MLLMs. |
+| [ORFS-agent: Tool-Using Agents for Chip Design Optimization](https://arxiv.org/abs/2506.08332) | arXiv | 2025 | Prompt-based | Apply iterative optimization to automated parameter tuning in chip design. |
+
+
+### 3.2 Low-level LLMs for Optimization Algorithms
+
+| **Title** | **Publication** | **Year** | **Type** | **Summary** |
+|-----------|---------------|----------|----------|------------|
+| [Language Model Crossover: Variation through Few-Shot Prompting](https://dl.acm.org/doi/abs/10.1145/3694791) | TELO | 2023 | Operators | Leverage LLMs as intelligent operators for textual genome crossover and recombination. |
+| [GPT-NAS: Evolutionary Neural Architecture Search with the Generative Pre-Trained Model](https://arxiv.org/abs/2305.05351) | arXiv | 2023 | Initialization | Utilize LLMs for NAS initialization with prior knowledge. |
+| [Large Language Models as Evolutionary Optimizers](https://ieeexplore.ieee.org/abstract/document/10611913) | CEC | 2023 | Operators | Employ LLMs as crossover, mutation, and selection operators to guide EAs. |
+| [LLM Performance Predictors are good initializers for Architecture Search](https://arxiv.org/abs/2310.16712) | arXiv | 2023 | Initialization | Utilize LLMs as performance predictors to assist initialization processes. |
+| [Large Language Model for Multiobjective Evolutionary Optimization](https://link.springer.com/chapter/10.1007/978-981-96-3538-2_13) | EMO | 2023 | Operators |Empower MOEA/D with LLMs through zero-shot prompting as search operators in multi-objective optimization. |
+| [Optimized Financial Planning: Integrating Individual and Cooperative Budgeting Models with LLM Recommendations](https://www.mdpi.com/2673-2688/5/1/6) | AI | 2023 | Initialization | Assist non-expert users in initializing financial plans. |
+| [Large Language Model-Based Evolutionary Optimizer: Reasoning with elitism](https://arxiv.org/abs/2403.02054) | Neucom | 2024 | Operators | Utilize LLMs to guide individuals from dual pools for exploration and exploitation. |
+| [Integrating genetic algorithms and language models for enhanced enzyme design](https://academic.oup.com/bib/article/26/1/bbae675/7945613?login=false) | BiB | 2024 | Initialization | Initialize genetic algorithms with LLMs to generate high-quality mutant pools for enzyme design. |
+| [LLM Guided Evolution - The Automation of Models Advancing Models](https://dl.acm.org/doi/abs/10.1145/3638529.3654178) | GECCO | 2024 | Operators | Enhance the creativity and diversity of the LLM by introducing different role-based prompts for NAS. |
+| [Large Language Model-Aided Evolutionary Search for Constrained Multiobjective Optimization](https://arxiv.org/abs/2405.05767) | ICIC | 2024 | Operators | Generate minimal solutions within populations using LLMs to reduce interaction costs. |
+| [Large Language Models for Tuning Evolution Strategies](https://arxiv.org/abs/2405.10999) | arXiv | 2024 | Configuration | Apply LLM-based feedback loops to sequentially optimize evolution strategies through static tuning. |
+| [Large language models as surrogate models in evolutionary algorithms: A preliminary study](https://www.sciencedirect.com/science/article/abs/pii/S2210650224002797) | SWEVO | 2024 | Evaluation | Transform model-assisted selection tasks into classification and regression problems. |
+| [LICO: Large Language Models for In-Context Molecular Optimization](https://arxiv.org/abs/2406.18851) | arXiv | 2024 | Evaluation | Apply LLMs as surrogate models in molecular science applications. |
+| [Large Language Model-assisted Surrogate Modelling for Engineering Optimization](https://ieeexplore.ieee.org/abstract/document/10605321) | CAI | 2024 | Evaluation | Develop a collaborative framework using LLMs for model selection and training in engineering optimization. |
+| [An investigation on the use of Large Language Models for hyperparameter tuning in Evolutionary Algorithms](https://dl.acm.org/doi/abs/10.1145/3638530.3664163) | GECCO | 2024 | Configuration | Implement step-size control for evolution strategies using OPRO-like mechanisms. |
+| [Advancing Automated Knowledge Transfer in Evolutionary Multitasking via Large Language Models](https://arxiv.org/abs/2409.04270) | arXiv | 2024 | Operators | Utilize LLMs to assist mutation and other generative stages in evolutionary multi-task optimization. |
+| [Large Language Model Aided Multi-objective Evolutionary Algorithm: a Low-cost Adaptive Approach](https://arxiv.org/abs/2410.02301) | arXiv | 2024 | Operators | Invoke LLMs for elite solution generation only upon insufficient population improvement. |
+| [LLaMA Tunes CMA-ES](https://www.esann.org/sites/default/files/proceedings/2024/ES2024-136.pdf) | ESANN | 2024 | Configuration | Apply LLM-based feedback loops to sequentially optimize CMA-ES through dynamic control. |
+| [Can Large Language Models Be Trusted as Evolutionary Optimizers for Network-Structured Combinatorial Problems?](https://arxiv.org/abs/2501.15081) | arXiv | 2025 | Operators | Validate LLM effectiveness in selection, crossover, and mutation phases while noting limitations in initialization |
+| [LLM-Guided Evolution: An Autonomous Model Optimization for Object Detection](https://dl.acm.org/doi/abs/10.1145/3712255.3734340) | GECCO | 2025 | Operators | Utilize LLMs as crossover and mutation operators to optimize YOLO architectures for object detection. |
+| [LAOS: Large Language Model-Driven Adaptive Operator Selection for Evolutionary Algorithms](https://dl.acm.org/doi/abs/10.1145/3712256.3726450) | GECCO | 2025 | Configuration | Utilize state features to replace optimization trajectories for guiding LLM-based operator selection. |
+| [PAIR: A Novel Large Language Model-Guided Selection Strategy for Evolutionary Algorithms](https://arxiv.org/abs/2503.03239) | arXiv | 2025 | Operators | Focus on utilizing LLMs as selection operators to enhance LMEA. |
+| [Large Language Model as Meta-Surrogate for Data-Driven Many-Task Optimization: A Proof-of-Principle Study](https://arxiv.org/abs/2503.08301) | arXiv | 2025 | Evaluation | Utilize LLMs as meta-Surrogates to facilitate cross-task knowledge sharing through token sequence representations. |
+| [Large Language Models as Particle Swarm Optimizers](https://arxiv.org/abs/2504.09247) | arXiv | 2025 | Operators | Simulate PSO evolutionary processes using LLMs and refine LMEA for specific algorithms. |
+| [Large Language Model-Driven Surrogate-Assisted Evolutionary Algorithm for Expensive Optimization](https://arxiv.org/abs/2507.02892) | arXiv | 2025 | Evaluation | Dynamically select appropriate proxy models and infill sampling criteria using LLMs. |
+
+### 3.3 High-level LLMs for Optimization Algorithms
+
+
+**Title**                                                                                                                                | **Publication** | **Year**   | **Summary**                                                                                                                                                                                                  
+
 
 
 ### 2. Low-level LLM-assisted Optimization Algorithms
 #### 2.1 LLMs as Operators
-| **Title** | **Publication** | **Year** | **Summary** |
-|-----------|---------------|----------|------------|
-| [Large language model-based evolutionary optimizer: Reasoning with elitism](https://arxiv.org/pdf/2403.02054) | Neurocomputing | Mar 2024 | The paper proposes LEO, a population-based evolutionary optimizer leveraging large language models (LLMs) for zero-shot numerical optimization. By integrating exploration-exploitation pools and prompt engineering, LEO achieves competitive performance in multi-objective and industrial problems while addressing challenges like hallucination through jitter and identity-driven context prompts. |
-| [LLM Guided Evolution - The Automation of Models Advancing Models](https://arxiv.org/pdf/2403.11446) | GECCO | Mar 2024 | The paper introduces ​​Guided Evolution (GE)​​, a framework that uses ​​LLMs to autonomously optimize neural architectures​​ through code mutations and feedback-driven ​​Evolution of Thought (EoT)​​, achieving improved accuracy (e.g., ​​93.34% on CIFAR-10​​) without increasing model size. |
-| [Large Language Models as Evolutionary Optimizers](https://arxiv.org/pdf/2310.19046) | CEC | Apr 2024 | The study proposes LMEA, a novel framework that employs large language models as evolutionary optimizers for combinatorial problems. By leveraging zero-shot prompting and adaptive temperature control, LMEA achieves competitive performance on TSP instances (up to 20 nodes) without domain-specific operator design or model fine-tuning, demonstrating the potential of LLMs in automated optimization. |
-| [Language Model Crossover: Variation through Few-Shot Prompting](https://doi.org/10.1145/3694791) | ACM Transactions on EL | May 2024 | The paper introduces Language Model Crossover (LMX), a novel evolutionary operator leveraging large language models' few-shot prompting to generate semantically-rich offspring by pattern completion. LMX enables domain-agnostic text-based evolution across binary strings, equations, code, and image prompts, demonstrating its versatility and scalability with model size. |
-| [Advancing Automated Knowledge Transfer in Evolutionary Multitasking via Large Language Models](https://arxiv.org/pdf/2409.04270) | ArXiv | Sep 2024 | This study proposes an LLM-based framework (LLMOF) that autonomously generates knowledge transfer models for evolutionary multitask optimization, leveraging few-shot chain-of-thought prompting and multi-objective evolutionary mechanisms to balance effectiveness and efficiency. Experimental results demonstrate LLMOF's superiority over hand-crafted models, achieving higher-quality solutions with reduced computational costs across diverse optimization benchmarks. |
-| [Large Language Model Implemented Simulated Annealing Algorithm for Traveling Salesman Problem](https://doi.org/10.1109/SMC54092.2024.10831145) | SMC | Oct 2024 | This paper proposes a novel approach combining large language models (LLMs) with simulated annealing (SA) to solve the Traveling Salesman Problem (TSP), demonstrating that LLMs can effectively guide heuristic algorithms while maintaining accessibility for non-experts. The results show competitive performance on small-to-medium TSP instances but highlight scalability limitations for larger problems. |
-| [LLM-Virus: Evolutionary Jailbreak Attack on Large Language Models](https://arxiv.org/pdf/2501.00055) | ArXiv | Dec 2024 | LLM-Virus proposes an evolutionary jailbreak attack framework inspired by viral infection dynamics, leveraging LLMs as heuristic evolutionary operators to optimize adversarial templates. By integrating transfer learning and LLM-enhanced crossover/mutation, it achieves state-of-the-art attack success rates (e.g., 90.8% on GPT-3.5) with significantly reduced computational costs, demonstrating superior transferability and efficiency compared to gradient-based and rule-based methods. |
-| [Can Large Language Models Be Trusted as Black-Box Evolutionary Optimizers for Combinatorial Problems?](https://arxiv.org/pdf/2501.15081) | ArXiv | Jan 2025 | This study rigorously evaluates LLMs as black-box evolutionary optimizers for combinatorial problems, demonstrating their effectiveness in selection, crossover, and mutation stages but limitations in data-intensive tasks like initialization. It introduces population-level optimization and error-correction mechanisms, showing cost efficiency and improved reliability with models like GPT-4, while highlighting scalability challenges for large datasets. |
-| [PAIR: A Novel Large Language Model-Guided Selection Strategy for Evolutionary Algorithms](https://arxiv.org/abs/2503.03239) | ArXiv | Mar 2025 | The paper introduces ​​PAIR​​, a novel selection strategy for evolutionary algorithms that leverages ​​large language models (LLMs)​​ to intelligently pair individuals based on genetic diversity, fitness, and compatibility, significantly improving optimization performance on problems like the Traveling Salesman Problem (TSP). |
-| [LLM-Guided Evolution: An Autonomous Model Optimization for Object Detection](https://arxiv.org/pdf/2504.02280) | GECCO | Apr 2025 | The paper introduces ​​LLM-Guided Evolution (LLM-GE)​​, a framework that leverages large language models (LLMs) to autonomously optimize YOLO architectures for object detection on the KITTI dataset, achieving improved accuracy (e.g., mAP@50 from 92.5% to 94.5%) through code-aware mutations and evolutionary feedback. |
-| [Large Language Models as Particle Swarm Optimizers](https://arxiv.org/pdf/2504.09247) | ArXiv | Apr 2025 | This paper introduces ​​LMPSO​​, a novel method that integrates ​​large language models (LLMs)​​ into ​​Particle Swarm Optimization (PSO)​​, enabling LLMs to generate structured solutions (e.g., TSP paths, math expressions) through natural language prompts, while maintaining PSO’s collaborative search framework. |
+
 
 
 
@@ -243,12 +307,3 @@ We further divide the "Algorithm Generation" process into two approaches: Single
 | [Enhancing healthcare resource allocation through large language models](https://doi.org/10.1016/j.swevo.2025.101859) | SEC | Nov 2024 | This study proposes an LLM-based framework integrating Prompt Engineering, RAG, and tool utilization to optimize healthcare resource allocation dynamically. ChatGPT-4o outperformed traditional methods by reducing costs and overtime while adapting to scale changes without re-optimization, demonstrating LLMs' potential in balancing multi-objective constraints and real-world medical complexities. |
 | [Bridging Large Language Models and Optimization: A Unified Framework for Text-attributed Combinatorial Optimization](https://doi.org/10.48550/arXiv.2408.12214) | ArXiv | Dec 2024 | LNCS bridges LLMs and combinatorial optimization by encoding text-attributed problems into a unified semantic space and generating solutions via a Transformer-based network. Trained with conflict-free multi-task reinforcement learning, it achieves state-of-the-art performance across diverse COPs while enabling cross-problem generalization through fine-tuning. |
 | [Meta-Optimization and Program Search using Language Models for Task and Motion Planning](https://arxiv.org/pdf/2505.03725) | ArXiv | May 2024 | The paper introduces ​​MOPS​​, a hierarchical method combining ​​language models​​ and ​​numerical optimization​​ to solve ​​task and motion planning (TAMP)​​ by searching over constraint sequences instead of action sequences, enabling precise robotic manipulation from natural language instructions. |
-
-## How to Contribute
-
-If you would like to add more papers to this collection or suggest edits, please feel free to open a pull request. Contributions are welcome! Please follow these guidelines:
-
-1. Fork this repository.
-2. Add your paper to the appropriate section (either Problem-driven LLM-based Optimization, Low-level LLM-assisted EAs, or High-level LLM-assisted EAs).
-3. Add a brief summary of the paper along with the title, authors, and year.
-4. Submit a pull request for review.
