@@ -128,7 +128,7 @@ The advent of large language models has propelled this research into a new phase
 LLMs as optimizers refers to the use of LLMs directly as general-purpose optimizers, which solve optimization problems through iterative natural language interaction without relying on traditional optimization algorithm frameworks. This paradigm leverages the powerful in-context learning and complex reasoning capabilities of LLMs to analyze optimization trajectories and continuously generate more promising candidate solutions.
 
 <div style="text-align: center;">
-    <img src="fig/direct.png" width="200" />
+    <img src="fig/direct.png" width="400" />
 </div>
 
 
