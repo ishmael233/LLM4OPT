@@ -152,6 +152,12 @@ LLMs as optimizers refers to the use of LLMs directly as general-purpose optimiz
 
 ### 3.2 Low-level LLMs for Optimization Algorithms
 
+There is a profound complementarity between the swarm intelligence of EAs and the knowledge-driven reasoning of LLMs. The powerful understanding and generative capabilities of LLMs can provide intelligent guidance for the traditional heuristic exploration of EAs, thereby significantly improving optimization efficiency and solution quality. This collaborative paradigm, which integrates LLMs as components within EAs, has opened a new direction for low-level assistance in the optimization field. This section will systematically discuss research in this area, specifically covering the application of LLMs at different stages of EAs, including initialization, evolutionary operators, algorithm configuration, and evaluation.
+
+<div style="text-align: center;">
+    <img src="fig/low-level.png" width="600" />
+</div>
+
 | **Title** | **Publication** | **Year** | **Type** | **Summary** |
 |-----------|---------------|----------|----------|------------|
 | [Language Model Crossover: Variation through Few-Shot Prompting](https://dl.acm.org/doi/abs/10.1145/3694791) | TELO | 2023 | Operators | Leverage LLMs as intelligent operators for textual genome crossover and recombination. |
@@ -181,6 +187,14 @@ LLMs as optimizers refers to the use of LLMs directly as general-purpose optimiz
 | [Large Language Model-Driven Surrogate-Assisted Evolutionary Algorithm for Expensive Optimization](https://arxiv.org/abs/2507.02892) | arXiv | 2025 | Evaluation | Dynamically select appropriate proxy models and infill sampling criteria using LLMs. |
 
 ### 3.3 High-level LLMs for Optimization Algorithms
+
+Unlike low-level assistance, which focuses on micro-level interventions within EAs, high-level assistance operates on a macro-level. It aims to enhance solving performance by intelligently selecting existing algorithms or generating entirely new ones, leveraging the performance synergy among them. This section will systematically explore two main forms of high-level assistance: LLMs for algorithm selection and generation.
+
+<div style="text-align: center;">
+    <img src="fig/high-level.png" width="600" />
+</div>
+
+
 
 | **Title** | **Publication** | **Year** | **Type** | **Summary** |
 |-----------|---------------|----------|----------|------------|
