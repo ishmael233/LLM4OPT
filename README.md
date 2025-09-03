@@ -1,5 +1,7 @@
 # LLM4OPT: from Modeling to Solving
 
+This is a collection in the field of LLM for optimization, **covering LLM service optimization modeling and optimization solving**. For detailed classification methods and introductions, please refer to the article: A Systematic Survey on Large Language Models for Optimization: from Modeling to Solving.
+
 ## 🎯 LLMs for Optimization
 
 Optimization techniques have become a core tool for solving complex problems across diverse fields such as engineering design, economic planning, and scientific discovery. When tackling real-world challenges, researchers typically abstract them into mathematical optimization models, which are then solved using various optimization algorithms. In recent years, large language models (LLMs) have emerged as a powerful paradigm, offering novel perspectives and capabilities for the field of optimization. The application of LLMs in optimization spans two primary areas: **modeling** and **solving**.
