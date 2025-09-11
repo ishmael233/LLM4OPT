@@ -1,6 +1,6 @@
 # LLM4OPT: from Modeling to Solving
 
-This is a collection in the field of LLM for optimization, **covering LLM service optimization modeling and optimization solving**. For detailed classification methods and introductions, please refer to the article: A Systematic Survey on Large Language Models for Optimization: from Modeling to Solving.
+This is a collection in the field of LLM for optimization, **covering LLM service optimization modeling and optimization solving**. For detailed classification methods and introductions, please refer to the article: [A Systematic Survey on Large Language Models for Evolutionary Optimization: From Modeling to Solving](https://arxiv.org/abs/2509.08269).
 
 ## 🎯 LLMs for Optimization
 
