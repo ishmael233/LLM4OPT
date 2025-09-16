@@ -102,6 +102,7 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 | [EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations](https://arxiv.org/abs/2502.14760) | arXiv | 2025 | Two-stage | Generate variable mapping functions via LLMs with lightweight verification. |
 | [Large Language Model-Based Automatic Formulation for Stochastic Optimization Models](https://arxiv.org/abs/2508.17200) | arXiv | 2025 | Multi-agent | Deploy multiple independent reviewers to evaluate modeling results. |
 | [ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research](https://arxiv.org/abs/2506.01326) | arXiv | 2025 | Multi-agent | Replace the conductor agent with structured, predictable workflows. |
+| [LLM for Large-Scale Optimization Model Auto-Formulation: A Lightweight Few-Shot Learning Approach](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329027) | arXiv | 2025 | Multi-agent | Integrate RAG to enhance problem classification, and construct instances with query operations. |
 
 ### 2.2 learning-based Methods
 
