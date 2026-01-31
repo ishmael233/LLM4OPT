@@ -120,6 +120,8 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 | [Step-Opt: Boosting Optimization Modeling in LLMs through Iterative Data Synthesis and Structured Validation](https://arxiv.org/abs/2506.17637) | arXiv | 2025 | Data synthesis | Increase problem complexity through an iterative problem generation approach. |
 | [Auto-Formulating Dynamic Programming Problems with Large Language Models](https://arxiv.org/abs/2507.11737) | arXiv | 2025 | Data synthesis | Combine the diversity of forward generation and the reliability of inverse generation. |
 | [Toward a Trustworthy Optimization Modeling Agent via Verifiable Synthetic Data Generation](https://arxiv.org/abs/2508.03117) | arXiv | 2025 | Data synthesis | Develop a verifiable synthetic data generation pipeline. |
+| [Steporlm: A self-evolving framework with generative process supervision for operations research language models](https://arxiv.org/abs/2509.22558) | arXiv | 2025 |  Fine-tuning | Introduce generative process supervision and co-evolutionary loop for refining reasoning trajectories |
+
 
 ## 3. LLMs for Optimization Solving
 
