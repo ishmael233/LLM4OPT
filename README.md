@@ -103,6 +103,7 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 | [Large Language Model-Based Automatic Formulation for Stochastic Optimization Models](https://arxiv.org/abs/2508.17200) | arXiv | 2025 | Multi-agent | Deploy multiple independent reviewers to evaluate modeling results. |
 | [ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research](https://arxiv.org/abs/2506.01326) | arXiv | 2025 | Multi-agent | Replace the conductor agent with structured, predictable workflows. |
 | [LLM for Large-Scale Optimization Model Auto-Formulation: A Lightweight Few-Shot Learning Approach](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329027) | arXiv | 2025 | Multi-agent | Integrate RAG to enhance problem classification, and construct instances with query operations. |
+| [OptimAI: Optimization from Natural Language Using LLM-Powered AI Agents](https://arxiv.org/abs/2504.16918) | arXiv | 2025 | Multi-agent | Four-stage pipeline (Formulator→Planner→Coder→Code Critic) with UCB multi-armed bandit scheduling for heterogeneous model collaboration. |
 
 ### 2.2 learning-based Methods
 
