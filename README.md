@@ -71,6 +71,7 @@ The references listed here are shared for **research purposes only**. If you are
 | [A Survey of Optimization Modeling Meets LLMs: Progress and Future Directions](https://arxiv.org/abs/2508.10047) | arXiv | 2025 |
 
 
+
 ## 2. LLMs for Optimization Modeling
 We'll delve into two core paradigms for using LLMs for optmization modeling: prompt-based methods and learning-based methods. Prompt-based methods leverage carefully designed instructions to guide the LLM in completing modeling tasks. This often involves a two-stage workflow or the collaboration of multiple LLMs. Learning-based methods, on the other hand, use fine-tuned models to directly generate mathematical models. However, they typically require pre-training on a large amount of synthetic data.
 
@@ -104,6 +105,7 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 | [ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research](https://arxiv.org/abs/2506.01326) | arXiv | 2025 | Multi-agent | Replace the conductor agent with structured, predictable workflows. |
 | [LLM for Large-Scale Optimization Model Auto-Formulation: A Lightweight Few-Shot Learning Approach](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5329027) | arXiv | 2025 | Multi-agent | Integrate RAG to enhance problem classification, and construct instances with query operations. |
 | [OptimAI: Optimization from Natural Language Using LLM-Powered AI Agents](https://arxiv.org/abs/2504.16918) | arXiv | 2025 | Multi-agent | Four-stage pipeline (Formulator→Planner→Coder→Code Critic) with UCB multi-armed bandit scheduling for heterogeneous model collaboration. |
+| [Optitree: Hierarchical thoughts generation with tree search for LLM optimization modeling](https://arxiv.org/abs/2510.22192) | NeurIPS | 2026 | Multi-agent | Perform hierarchical subproblem decomposition through a tree and synthesize global thoughts. |
 
 ### 2.2 learning-based Methods
 
@@ -122,6 +124,8 @@ We'll delve into two core paradigms for using LLMs for optmization modeling: pro
 | [Auto-Formulating Dynamic Programming Problems with Large Language Models](https://arxiv.org/abs/2507.11737) | arXiv | 2025 | Data synthesis | Combine the diversity of forward generation and the reliability of inverse generation. |
 | [Toward a Trustworthy Optimization Modeling Agent via Verifiable Synthetic Data Generation](https://arxiv.org/abs/2508.03117) | arXiv | 2025 | Data synthesis | Develop a verifiable synthetic data generation pipeline. |
 | [Steporlm: A self-evolving framework with generative process supervision for operations research language models](https://arxiv.org/abs/2509.22558) | arXiv | 2025 |  Fine-tuning | Introduce generative process supervision and co-evolutionary loop for refining reasoning trajectories |
+| [OR-R1: Automating modeling and solving of operations research optimization problem via test-time reinforcement learning](https://doi.org/10.1609/aaai.v40i1.36983) | AAAI | 2026 | Fine-tuning | Integrate fine-tuning with TGRPO to improve efficiency and output consistency using unlabeled data. |
+| [Deepor: A deep reasoning foundation model for optimization modeling](https://doi.org/10.1609/aaai.v40i40.40699) | AAAI | 2026 | Fine-tuning | Develop a reasoning foundation model for modeling with structured reasoning generation. |
 
 
 ## 3. LLMs for Optimization Solving
@@ -141,6 +145,7 @@ LLMs as optimizers refers to the use of LLMs directly as general-purpose optimiz
 |-----------|--------------|------|------|----------|
 | [Large Language Models as Optimizers](https://doi.org/10.48550/arXiv.2309.03409) | ICLR | 2023 | Prompt-based | Iteratively refine through optimization trajectories and problem descriptions. |
 | [Towards Optimizing with Large Language Models](https://arxiv.org/abs/2310.05204) | KDD | 2023 | Prompt-based | Design four canonical tasks to evaluate the performance boundaries of LLMs. |
+| [Can Language Models Solve Graph Problems in Natural Language?](https://arxiv.org/abs/2305.10037) | NeurIPS | 2023 | Benchmark | Systematic evaluation of LLMs on eight graph algorithmic tasks, covering polynomial-time graph reasoning. |
 | [Large Language Models As Evolution Strategies](https://dl.acm.org/doi/abs/10.1145/3638530.3654238) | GECCO | 2024 | Prompt-based | Replace traditional optimization trajectories with candidate solution quality ranking. |
 | [How Multimodal Integration Boost the Performance of LLM for Optimization: Case Study on Capacitated Vehicle Routing Problems](https://doi.org/10.48550/arXiv.2403.01757) | MCII | 2024 | Prompt-based | Utilize MLLMs to jointly process problem descriptions and map visualizations for CVRPs. |
 | [Pretrained Optimization Model for Zero-Shot Black Box Optimization](https://proceedings.neurips.cc/paper_files/paper/2024/file/19e9a88d91917775b34fdad447ed8908-Paper-Conference.pdf) | NeurIPS | 2024 | Learning-based | Pre-train a general-purpose, zero-shot black-box optimization foundation model. |
@@ -149,12 +154,15 @@ LLMs as optimizers refers to the use of LLMs directly as general-purpose optimiz
 | [Revisiting OPRO: The Limitations of Small-Scale LLMs as Optimizers](https://arxiv.org/abs/2405.10276) | ACL | 2024 | Prompt-based | Discuss the model dependency of OPRO and identify its limitations on small-scale models. |
 | [Exploring the True Potential: Evaluating the Black-box Optimization Capability of Large Language Models](https://arxiv.org/abs/2404.06290) | ArXiv | 2024 | Prompt-based | Conduct evaluation of LLMs on both discrete and continuous black-box optimization problems. |
 | [LLMs can Schedule](https://arxiv.org/abs/2408.06993) | ArXiv | 2024 | Learning-based | Fine-tune LLMs with instruction-solution pairs for scheduling problems.|
+| [Can Large Language Models be Good Path Planners? A Benchmark and Investigation on Spatial-temporal Reasoning](https://openreview.net/pdf?id=sxC2TQXYzv) | ICLR | 2024 | Benchmark | Controllable grid-world path planning benchmark testing spatial-temporal reasoning. |
 | [An Optimizable Suffix Is Worth A Thousand Templates: Efficient Black-box Jailbreaking without Affirmative Phrases via LLM as Optimizer](https://arxiv.org/abs/2408.11313) |  NAACL | 2025 | Prompt-based | Apply iterative optimization to jailbreaking attack strategies. |
 | [Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks](https://arxiv.org/abs/2410.22296) |  ArXiv | Apr 2025 | Learning-based | Integrate preference learning to train LLMs for satisfying complex biophysical constraints. |
 | [Large Language Models for Combinatorial Optimization of Design Structure Matrix](https://arxiv.org/abs/2411.12571) | ArXiv | Nov 2024 | Prompt-based | Apply iterative optimization to design structure matrix sequencing. |
 | [Large Language Model-Based Wireless Network Design](https://doi.org/10.1109/LWC.2024.3462556) | WCL | Sep 2024 | Prompt-based | Apply iterative optimization to wireless network design. |
 | [Bridging Visualization and Optimization: Multimodal Large Language Models on Graph-Structured Combinatorial Optimization](https://arxiv.org/abs/2501.11968) |  ArXiv | 2025  | Prompt-based | Process visual representations of abstract graph structures using MLLMs. |
 | [ORFS-agent: Tool-Using Agents for Chip Design Optimization](https://arxiv.org/abs/2506.08332) | arXiv | 2025 | Prompt-based | Apply iterative optimization to automated parameter tuning in chip design. |
+| [GraphArena: Evaluating and Exploring Large Language Models on Graph Computation](https://arxiv.org/abs/2407.00379) | ICLR | 2025 | Benchmark | Real-world graph benchmark with P-class and NP-complete tasks, covering graph reasoning. |
+| [Opt-bench: Evaluating llm agent on large-scale search spaces optimization problems](https://arxiv.org/abs/2506.10764) | arXiv | 2025 | Benchmark | Large-scale search-space optimization benchmark with an OPT-Agent, covering Kaggle ML tasks and NP problems. |
 
 
 ### 3.2 Low-level LLMs for Optimization Algorithms
@@ -193,6 +201,7 @@ There is a profound complementarity between the swarm intelligence of EAs and th
 | [Large Language Models as Particle Swarm Optimizers](https://arxiv.org/abs/2504.09247) | arXiv | 2025 | Operators | Simulate PSO evolutionary processes using LLMs and refine LMEA for specific algorithms. |
 | [Large Language Model-Driven Surrogate-Assisted Evolutionary Algorithm for Expensive Optimization](https://arxiv.org/abs/2507.02892) | arXiv | 2025 | Evaluation | Dynamically select appropriate proxy models and infill sampling criteria using LLMs. |
 | [AgentTTS: Large Language Model Agent for Test-time Compute-optimal Scaling Strategy in Complex Tasks](https://arxiv.org/abs/2508.00890) | arXiv | 2025 | Configuration | Utilize insights derived from several experiments to guide LLMs in iteratively tuning test-time scaling and allocating the most appropriate model combinations. |
+
 
 ### 3.3 High-level LLMs for Optimization Algorithms
 
@@ -236,3 +245,7 @@ Unlike low-level assistance, which focuses on micro-level interventions within E
 | [Behaviour Space Analysis of LLM-driven Meta-heuristic Discovery](https://arxiv.org/abs/2507.03605) | arXiv | 2025 | Iterative | Conduct behavioral space analysis to examine algorithmic evolution trajectories and behaviors. |
 | [Fine-tuning Large Language Model for Automated Algorithm Design](https://arxiv.org/abs/2507.10614) | arXiv | 2025 | Iterative | Fine-tune LLMs with diversity-aware ranked sampling for algorithm generation.|
 | [EoH-S: Evolution of Heuristic Set using LLMs for Automated Heuristic Design](https://arxiv.org/abs/2508.03082) | arXiv | 2025 | Iterative | Extend EoH to evolve and generate complementary algorithm portfolios. |
+| [ALE-Bench: A Benchmark for Long-Horizon Objective-Driven Algorithm Engineering](https://arxiv.org/abs/2506.09050) | NeurIPS | 2025 | Benchmark | Benchmark for long-horizon objective-driven algorithm engineering with ELO-style scoring, focusing on score optimization for CO. |
+| [Co-bench: Benchmarking language model agents in algorithm search for combinatorial optimization](https://doi.org/10.1609/aaai.v40i39.40596) | AAAI | 2026 | Benchmark | Comprehensive benchmark for LLM agents in algorithm search, covering 36 real-world CO problems across 8 categories. |
+| [FrontierCO: Real-world and large-scale evaluation of machine learning solvers for combinatorial optimization](https://openreview.net/forum?id=BVprkacwFY) | ICLR | 2026 | Benchmark | Real-world large-scale CO benchmark with competition-grade instances and easy/hard splits, covering TSP, CVRP, and MIS. |
+| [Heurigym: An agentic benchmark for llm-crafted heuristics in combinatorial optimization](https://arxiv.org/abs/2506.07972) | ICLR | 2026 | Benchmark | Agentic benchmark for LLM-crafted heuristics in CO with low-exposure problems, featuring Quality-Yield Index evaluation. |
