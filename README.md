@@ -34,7 +34,7 @@ We welcome any suggestions and pull requests! This list is far from comprehensiv
 
 3. 📧 **Direct Contact** 
    - Have questions or want to collaborate?
-   - Contact Yisong Zhang at [23s004040@stu.hit.edu.cn](mailto:23s004040@stu.hit.edu.cn)
+   - Contact Yisong Zhang at [yisong.zhang@connect.polyu.hk](mailto:yisong.zhang@connect.polyu.hk)
 
 ### 📜 Sharing Principle
 
@@ -47,7 +47,9 @@ The references listed here are shared for **research purposes only**. If you are
 
 ## 📑 Table of Contents
 
-- 📚 [1. Survey Papers](#1-survey-papers)
+- 📚 [1. Survey & Benchmark](#1-Survey-&-Benchmark)
+  - 📖 [1.1 Survey](#11-Survey)
+  - 🏆 [1.2 Benchmark](#12-Benchmark)
 - 💻 [2. LLMs for Optimization Modeling](#2-LLMs-for-Optimization-Modeling)
   - 🎮 [2.1 Prompt-based Methods](#21-Prompt-based-Methods)
   - 🧠 [2.2 Learning-based Methods](#22-Learning-based-Methods)
@@ -56,8 +58,8 @@ The references listed here are shared for **research purposes only**. If you are
   - 🔧 [3.2 Low-level LLMs for Optimization Algorithms](#32-Low-level-LLMs-for-Optimization-Algorithms)
   - 🎨 [3.3 High-level LLMs for Optimization Algorithms](#33-High-level-LLMs-for-Optimization-Algorithms)
 
-
-## 1. Survey Papers
+## 1. Survey & Benchmark
+### 1.1 Survey
 | **Title** | **Publication** | **Year** |
 |-----------|--------------|------|
 | [Evolutionary Computation in the Era of Large Language Model: Survey and Roadmap](https://arxiv.org/abs/2401.10034) | TEVC | 2024 |
@@ -69,6 +71,31 @@ The references listed here are shared for **research purposes only**. If you are
 | [Toward Automated Algorithm Design: A Survey and Practical Guide to Meta-Black-Box-Optimization](https://arxiv.org/abs/2411.00625) | TEVC | 2024 |
 | [Evolutionary Computation and Large Language Models: A Survey of Methods, Synergies, and Applications](https://arxiv.org/abs/2505.15741) | arXiv | 2025|
 | [A Survey of Optimization Modeling Meets LLMs: Progress and Future Directions](https://arxiv.org/abs/2508.10047) | arXiv | 2025 |
+
+### 1.2 Benchmark
+| **Title** | **Publication** | **Year** | **Scale** | **Summary** |
+|-----------|-----------------|----------|----------|-------------|
+| **Modeling** |
+| [Nl4opt competition: Formulating optimization problems based on their natural language descriptions](https://d1wqtxts1xzle7.cloudfront.net/122322133/2303-libre.pdf?1744655460=&response-content-disposition=inline%3B+filename%3DNL4Opt_Competition_Formulating_Optimizat.pdf&Expires=1785119475&Signature=Afpr~mbldegGop0QBpW~bvxJkQ8a~y6DGDG7T75KyXDOIxIyTDdqEn01tmnIUSbqsZhjtjXZecxnGI1eM6g-M5VPm7KXQ3pmSJ~oIkG-KhPNKWIFIRpjL8UMN5n7704RrG31-jA9NzWxZnIWKnLC~PXurvOhjIH4gGznoQyr9M1AjNmulquTTBpLhb5LvxIYsbZ3ZOjuUbz1CDlMtFEB6UU-YBfLEkyMq6CCxMUi~Yi9SCW76WzfwQkmKA20HKG2uggHtcUWF3uOZeTHcrClMlRdJ4V3pT~kWX1jCCqPdJ2nf2qBufLpWHaPY6bH0Hd0tOgMeh2sQKn9JFRBCH1MSQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) | EMNLP | 2022 | 245 | Competition-derived benchmark for translating natural language into LP models. |
+| [OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models](https://arxiv.org/abs/2402.10172)  | ICML | 2024 | 67 | Natural-language descriptions of LP and MILP models. |
+| [Optimization modeling and verification from problem specifications using a multi-agent multi-stage llm framework](https://doi.org/10.1080/03155986.2024.2381306) | INFOR | 2024 | 70 | Handcrafted LP, MILP, and QP instances with structured specifications and Zimpl ground truth. |
+| [Chain-of-experts: When llms meet complex operations research problems](https://openreview.net/pdf?id=HobyL1B9CZ) | ICLR | 2024 | 37 | Complex MILP problems that require multistep formulation. |
+| [Llms for mathematical modeling: Towards bridging the gap between natural and mathematical languages](https://arxiv.org/abs/2405.13144) | NAACL | 2025 | 1,209 | Two difficulty levels spanning LP, MILP, and ordinary differential equations. |
+| [ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling](https://pubsonline.informs.org/doi/abs/10.1287/opre.2024.1233) | OR | 2025 | 100 | Synthetically generated industrial problems covering LP, IP, MILP, and NLP. |
+| [OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling](https://arxiv.org/abs/2407.09887)  | ICLR | 2025 | 605 | Synthetic LP, IP, MILP, and NLP instances with controllable complexity and verified equivalence. |
+| [Auto-Formulating Dynamic Programming Problems with Large Language Models](https://arxiv.org/abs/2507.11737) | arXiv | 2025 | 132 | Textbook-derived deterministic and stochastic dynamic-programming problems with finite or infinite horizons. |
+| [Cp-bench: Evaluating large language models for constraint modelling](https://arxiv.org/abs/2506.06052) | ECAI | 2025 | 164 | Natural-language CSP and COP instances with constraint-programming ground truth. |
+| [OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling](https://arxiv.org/abs/2502.11102)  | ICML | 2025 | 165 | Scalable bidirectional synthesis across LP, IP, MILP, NLP, and SOCP formulations. |
+| **Solving** |
+| [Can language models solve graph problems in natural language?](https://proceedings.neurips.cc/paper_files/paper/2023/file/622afc4edf2824a1b6aaf5afe153fa93-Paper-Conference.pdf) | NeurIPS | 2023 | 29,370 | Eight polynomial-time graph-reasoning tasks for systematic LLM evaluation. |
+| [Can large language models be good path planners? a benchmark and investigation on spatial-temporal reasoning](https://arxiv.org/abs/2310.03249) | ICLR | 2024 | 160,000+ | Controllable grid-world path-planning tasks for spatial and temporal reasoning. |
+| [Grapharena: Evaluating and exploring large language models on graph computation](https://proceedings.iclr.cc/paper_files/paper/2025/file/77fa8253adfc8b33209639f3e9985741-Paper-Conference.pdf) | ICLR | 2025 | 10,000 | Real-world graph benchmark covering both P-class and NP-complete tasks. |
+| [Ale-bench: A benchmark for long-horizon objective-driven algorithm engineering](https://proceedings.neurips.cc/paper_files/paper/2025/file/e555eab2c68f886052f404397ea52001-Paper-Datasets_and_Benchmarks_Track.pdf) | NeurIPS | 2025 | --  | Long-horizon, objective-driven algorithm engineering with Elo-style scoring. |
+| [Opt-bench: Evaluating llm agent on large-scale search spaces optimization problems](https://arxiv.org/pdf/2506.10764) | arXiv | 2025 | 30 | Large-search-space benchmark with an OPT-Agent for Kaggle ML tasks and NP problems. |
+| [Co-bench: Benchmarking language model agents in algorithm search for combinatorial optimization](https://doi.org/10.1609/aaai.v40i39.40596)| AAAI | 2026 | 6,482 | Benchmark for LLM-based algorithm search across 36 real-world CO problems in eight categories. |
+| [FrontierCO: Real-world and large-scale evaluation of machine learning solvers for combinatorial optimization](https://openreview.net/forum?id=BVprkacwFY) | ICLR | 2026 | 258+ | Competition-scale TSP, CVRP, and MIS instances with easy and hard splits. |
+| [Heurigym: An agentic benchmark for llm-crafted heuristics in combinatorial optimization](https://arxiv.org/pdf/2506.07972?) | ICLR | 2026 | 9 | Low-exposure CO problems for evaluating LLM-generated heuristics with the Quality-Yield Index. |
+| [LLM4AD: A platform for algorithm design with large language model](https://www.researchgate.net/profile/Fei-Liu-46/publication/387350888_LLM4AD_A_Platform_for_Algorithm_Design_with_Large_Language_Model/links/68b012952c7d3e0029b46191/LLM4AD-A-Platform-for-Algorithm-Design-with-Large-Language-Model.pdf) | arXiv | 2026 | 160+ | Unified platform for LLM-based algorithm design with modular search, sandboxing, and a GUI. |
 
 
 
