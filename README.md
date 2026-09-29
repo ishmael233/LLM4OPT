@@ -287,7 +287,7 @@ Unlike low-level assistance, which focuses on micro-level interventions within E
 | [Heurigym: An agentic benchmark for llm-crafted heuristics in combinatorial optimization](https://arxiv.org/abs/2506.07972) | ICLR | 2026 | Benchmark | Agentic benchmark for LLM-crafted heuristics in CO with low-exposure problems, featuring Quality-Yield Index evaluation. |
 | [HIFO-PROMPT: Prompting with Hindsight and Foresight for LLM-based Automatic Heuristic Design](https://arxiv.org/pdf/2508.13333)| ICLR | 2026 | Iterative | Propose a hierarchical prompting framework combining Foresight (Evolutionary Navigator for adaptive exploration-exploitation control) and Hindsight (self-evolving Insight Pool for knowledge distillation). |
 | [MeLA: A metacognitive LLM-driven architecture for automatic heuristic design](https://www.sciencedirect.com/science/article/pii/S0957417426019330)| ESWA | 2026 | Iterative | Introduce Metacognitive Prompt Evolution, shifting optimization focus from heuristic code to the underlying reasoning process. |
-
+| [Hierarchical Representations for Cross-task Automated Heuristic Design using LLMs](https://openreview.net/pdf?id=yLytuQFgeK) | ICML | 2026 |Iterative | Propose a multi-task hierarchical search framework (MTHS) decoupling task-agnostic metaheuristics from task-specific programs, enabling cross-task knowledge transfer and zero-shot generalization. |
 
 
 
